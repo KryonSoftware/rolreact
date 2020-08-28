@@ -5,7 +5,7 @@ import './styles/App.css';
 function App() {
   return (
     <div>
-        <h3>Bienvenido a la guía del jugador del mundo de Îldanneth</h3>
+        <h3>cambio</h3>
         {/* <h5>Esta web te servirá como guía para la creación de tus personajes, sus historias y trasfondo</h5> */}
         <p>Navega entre los distintos apartados para ir centrándote en temas
           concretos,
