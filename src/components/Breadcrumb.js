@@ -9,7 +9,18 @@ function handleClick(event) {
 }
 
 export default function SimpleBreadcrumbs(props) {
-    if(props.numero === "1") {
+  return (
+    <Breadcrumbs aria-label="breadcrumb">
+      <Link color="inherit" href="/" onClick={handleClick}>
+        Material-UI
+      </Link>
+      <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
+        Core
+      </Link>
+      <Typography color="contrastText">Breadcrumb</Typography>
+    </Breadcrumbs>
+  );
+   /*  if(props.numero === "1") {
         return (
             <Breadcrumbs aria-label="breadcrumb">
               <Link color="inherit" href="/" onClick={handleClick}>
@@ -31,5 +42,5 @@ export default function SimpleBreadcrumbs(props) {
               <Typography color="textPrimary">Índice</Typography>
             </Breadcrumbs>
           );
-    }
+    } */
 }

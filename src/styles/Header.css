@@ -1,7 +1,9 @@
 .header {
-    background-color: #f1f1f1;
+    background-color: #e9e9e9;
     padding: 0.05%;
     text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -18,15 +20,32 @@
 }
 
 .subtitulo {
-    font-size: 80%;
+    font-size: 25px;
+    margin-top: -35px;
 }
 
+@media (max-width: 720px) {
+    .subtitulo {
+        font-size: 15px;
+        margin-top: -35px;
+    }
+}
+
+@font-face {
+    font-family: 'bilbo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/BilboSwashCaps-Regular.ttf');
+  }
+
 .titulo {
-    font-size: 300%;
+    font-size: 400%;
+    font-family: 'bilbo';
 }
 
 .tit-div {
     display: inline-flex;
     align-items: center;
     width: min-content;
+    max-width: 2000px;
 }

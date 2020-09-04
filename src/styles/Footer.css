@@ -1,0 +1,119 @@
+.footer {
+    background-color: #424242;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(219, 219, 219, 0.933);
+    width: 100%;
+}
+
+.footer2 {
+    background-color: #333333;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(219, 219, 219, 0.933);
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.footerContainer {
+    width: 70%;
+    display: inline-flex;
+}
+
+.pie {
+    margin-top: auto;
+}
+
+.copyr {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hola {
+    width: 33%;
+}
+
+.adios {
+    width: 33%;
+}
+
+.enmedio {
+    width: 33%;
+}
+
+.totop {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    margin-top: -40px;
+}
+
+#acbut {
+    float: none;
+    bottom: none;
+    right: none;
+    margin-bottom: none;
+}
+
+.contenedorListaCorreo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.iconoLibre {
+    margin-right: 5%;
+    transition: transform 250ms;
+    color: rgba(219, 219, 219, 0.933);
+}
+
+.iconoLibre:hover {
+    transform: translateY(-2px);
+}
+
+.list {
+    display: inline-block;
+    width: 100%;
+}
+
+.enlace {
+    transition: transform 250ms;
+    color: rgba(219, 219, 219, 0.933);
+    text-decoration: none;
+}
+
+.enlace:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 720px) {
+    .hola {
+        width: 100%;
+    }
+    
+    .adios {
+        width: 100%;
+    }
+    
+    .enmedio {
+        width: 100%;
+    }
+    .footerContainer {
+        width: 100%;
+        display: block;
+    }
+    .footer2 {
+        background-color: #333333;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgba(219, 219, 219, 0.933);
+        padding-bottom: 3%;
+        padding-top: 1%;
+    }
+    .pie {
+        height: 100%;
+    }
+}
