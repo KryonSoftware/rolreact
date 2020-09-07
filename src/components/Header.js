@@ -28,7 +28,7 @@ export default function Header() {
                     Îldanneth
                 </h1>
                 <img className="logo" src={logo} alt="logo"/>
-                <p className="alpha">alpha</p>
+                <p className="alpha">beta</p>
             </div>
             <div>
                 <p id="subtitulo" className="subtitulo"><i>Guía de contexto global para jugadores y dungeon masters</i></p>
