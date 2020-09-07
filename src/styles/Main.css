@@ -9,6 +9,11 @@
   pointer-events: none;
 }
 
+.backtotop {
+  height: 0px!important;
+  min-height: 0px!important;
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 5s linear;
@@ -39,8 +44,12 @@
   }
 } */
 
+.box {
+  padding-top: 25px!important;
+}
+
 .todo {
-  margin-top: -64px;
+  margin-top: -25px;
   padding-top: 0px;
   padding-right: 20%;
   padding-left: 20%;
@@ -53,7 +62,7 @@
 
 @media (max-width: 720px) {
   .todo {
-    margin-top: -64px;
+    margin-top: -25px;
     padding-top: 0px;
     padding-right: 5%;
     padding-left: 5%;
@@ -78,6 +87,14 @@
   color:black;
 }
 
+.tabbed {
+  padding: 0px;
+}
+
+.re {
+  padding: 5px;
+}
+
 img {
   border-radius: 4px;
   display: block;
@@ -95,10 +112,6 @@ h1 {
   font-size: 200%;
 }
 
-/* h2 {
-
+.alignright {
+  text-align: right;
 }
-
-h3 {
-
-} */
