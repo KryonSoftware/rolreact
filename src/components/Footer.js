@@ -91,7 +91,7 @@ export default function Footer(props) {
     return (
         <div>
             <ScrollTop {...props}>
-                <Fab color="primary" size="small" aria-label="scroll back to top" id="acbut">
+                <Fab color="secondary" size="small" aria-label="scroll back to top" id="acbut">
                     <KeyboardArrowUpIcon />
                 </Fab>
             </ScrollTop>
@@ -99,31 +99,22 @@ export default function Footer(props) {
                 <div className="footer2">
                     <div className="footerContainer">
                         <div className="hola">
-                            <div><h2>îldanneth</h2></div>
-                            <div>Îldanneth es un mundo de fantasía creado por el Dungeon Master Kryon con la ayuda de Marc (Pip), Luis (Gregor), 
-                                Janusz (Klerk), Bruno (Kote), Jordi (Lindal) y Álex (Aurel)</div>
-                        </div>
-                        <div className="enmedio">
-                            <div><h2>Enlaces de interés</h2></div>
-                            <div className="list">
-                                <div><a href="https://dnd.wizards.com/" className="enlace" ><p className="enlace">Dungeons and Dragons</p></a></div>
-                                <div><a href="https://paizo.com/pathfinder" className="enlace" ><p className="enlace">Pathfinder</p></a></div>
-                                <div><a href="https://thetrove.net/Books/" className="enlace" ><p className="enlace">The Trove</p></a></div>
-                            </div>
+                            <div><h2>Let's work together</h2></div>
+                            <div>I'm always open to new adventures! Are you looking for a new employee? Contact me! :)</div>
                         </div>
                         <div className="adios">
-                            <div><h2>Contacto</h2></div>
+                            <div><h2>Social</h2></div>
                                 <div>
                                     <a href="mailto:jomipagu94@gmail.com">
                                         <FontAwesomeIcon icon={faEnvelope} size="2x" className="iconoLibre"/>
                                     </a>
-                                    <a href="https://github.com/KryonSoftware/rolreact">
+                                    <a href="https://github.com/KryonSoftware">
                                         <FontAwesomeIcon icon={faGithub} size="2x" className="iconoLibre"/>
                                     </a>
                                     <a href="http://www.linkedin.com">
                                         <FontAwesomeIcon icon={faLinkedin} size="2x" className="iconoLibre"/>
                                     </a>
-                                    <a href="https://t.me/joinchat/NX-gmRcfc0z4w95xhsL95w">
+                                    <a href="https://t.me/Kryon94">
                                         <FontAwesomeIcon icon={faTelegramPlane} size="2x" className="iconoLibre"/>
                                     </a>
                                 </div>
@@ -132,7 +123,7 @@ export default function Footer(props) {
                     </div>
                 </div>
                 <div className="footer">
-                    <div className="copyr">KryonSoftware | Autorizado el uso libre de la web y su contenido</div>
+                    <div className="copyr">José M. Pascual Gutiérrez | Software Developer</div>
                 </div>
             </div>
         </div>

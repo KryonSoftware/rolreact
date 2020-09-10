@@ -8,8 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
 import '../styles/Tabs.css';
-import Construccion from '../landings/Construccion';
-import Home from '../landings/Home';
+import Hello from '../landings/Hello';
 import Reinos from '../landings/Reinos';
 import Religiones from '../landings/Religiones';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -61,6 +60,20 @@ export default function ScrollableTabsButtonAuto() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  function Appbarear() {
+    const matches = useMediaQuery('(max-width:1080px)');
+    if(matches) {
+      return  <AppBar position="static" color="primary" className="bar" elevation="0">
+                <Tabear value={value}/>
+              </AppBar>
+    } else {
+      return  <AppBar position="static" color="primary" className="bar" elevation="0">
+                <Tabear value={value}/>
+              </AppBar>
+    }
+  }
+
   function Tabear() {
   
     const matches = useMediaQuery('(max-width:1080px)');
@@ -73,12 +86,12 @@ export default function ScrollableTabsButtonAuto() {
       scrollButtons="auto"
       aria-label="scrollable auto tabs example"
     >
-      <Tab label="Inicio" {...a11yProps(0)} />
-      <Tab label="Reinos" {...a11yProps(1)} />
-      <Tab label="Religiones" {...a11yProps(2)} />
-      <Tab label="Cronología" {...a11yProps(3)} />
-      <Tab label="Mapas" {...a11yProps(4)} />
-      <Tab label="Campañas y Aventuras" {...a11yProps(5)} />
+      <Tab label="Hello!" {...a11yProps(0)} />
+      <Tab label="Experience" {...a11yProps(1)} />
+      <Tab label="Studies" {...a11yProps(2)} />
+      <Tab label="Curriculum" {...a11yProps(3)} />
+      <Tab label="About me" {...a11yProps(4)} />
+      <Tab label="Contact" {...a11yProps(5)} />
     </Tabs>
     } else {
       return <Tabs
@@ -88,12 +101,12 @@ export default function ScrollableTabsButtonAuto() {
             aria-label="scrollable auto tabs example"
             centered
           >
-            <Tab label="Inicio" {...a11yProps(0)} />
-            <Tab label="Reinos" {...a11yProps(1)} />
-            <Tab label="Religiones" {...a11yProps(2)} />
-            <Tab label="Cronología" {...a11yProps(3)} />
-            <Tab label="Mapas" {...a11yProps(4)} />
-            <Tab label="Campañas y Aventuras" {...a11yProps(5)} />
+            <Tab label="Hello!" {...a11yProps(0)} />
+            <Tab label="Experience" {...a11yProps(1)} />
+            <Tab label="Studies" {...a11yProps(2)} />
+            <Tab label="Curriculum" {...a11yProps(3)} />
+            <Tab label="About me" {...a11yProps(4)} />
+            <Tab label="Contact" {...a11yProps(5)} />
           </Tabs>
     }
   }
@@ -101,11 +114,9 @@ export default function ScrollableTabsButtonAuto() {
   return (
     <React.Fragment className={classes.root}>
       <Toolbar id="back-to-top-anchor" className="backtotop"/>
-      <AppBar position="sticky" color="primary" className="bar">
-      <Tabear value={value}/>
-      </AppBar>
+      <Appbarear />
       <TabPanel value={value} index={0}>
-        <Home />
+        <Hello />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Reinos />
@@ -114,13 +125,13 @@ export default function ScrollableTabsButtonAuto() {
         <Religiones />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Construccion />
+        gg
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <Construccion />
+        gg
       </TabPanel>
       <TabPanel value={value} index={5}>
-        <Construccion />
+        gg
       </TabPanel>
     </React.Fragment>
   );
