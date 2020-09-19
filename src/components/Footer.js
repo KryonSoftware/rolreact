@@ -7,7 +7,7 @@ import Zoom from '@material-ui/core/Zoom';
 import PropTypes from 'prop-types';
 import $ from 'jquery';
 import { faGithub, faLinkedin, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 $(document).scroll(function() {
@@ -104,20 +104,20 @@ export default function Footer(props) {
                         </div>
                         <div className="adios">
                             <div><h2>Social</h2></div>
-                                <div>
-                                    <a href="mailto:jomipagu94@gmail.com">
-                                        <FontAwesomeIcon icon={faEnvelope} size="2x" className="iconoLibre"/>
-                                    </a>
-                                    <a href="https://github.com/KryonSoftware">
-                                        <FontAwesomeIcon icon={faGithub} size="2x" className="iconoLibre"/>
-                                    </a>
-                                    <a href="http://www.linkedin.com">
-                                        <FontAwesomeIcon icon={faLinkedin} size="2x" className="iconoLibre"/>
-                                    </a>
-                                    <a href="https://t.me/Kryon94">
-                                        <FontAwesomeIcon icon={faTelegramPlane} size="2x" className="iconoLibre"/>
-                                    </a>
-                                </div>
+                            <div>
+                                <a href="mailto:jomipagu94@gmail.com" className="iconoLibre-div">
+                                    <FontAwesomeIcon icon={faEnvelope} size="2x" className="iconoLibre"/>
+                                </a>
+                                <a href="https://github.com/KryonSoftware" className="iconoLibre-div">
+                                    <FontAwesomeIcon icon={faGithub} size="2x" className="iconoLibre"/>
+                                </a>
+                                <a href="http://www.linkedin.com" className="iconoLibre-div">
+                                    <FontAwesomeIcon icon={faLinkedin} size="2x" className="iconoLibre"/>
+                                </a>
+                                <a href="https://t.me/Kryon94" className="iconoLibre-div">
+                                    <FontAwesomeIcon icon={faTelegramPlane} size="2x" className="iconoLibre"/>
+                                </a>
+                            </div>
                             {/* </div> */}
                         </div>
                     </div>

@@ -9,8 +9,8 @@ import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
 import '../styles/Tabs.css';
 import Hello from '../landings/Hello';
-import Reinos from '../landings/Reinos';
-import Religiones from '../landings/Religiones';
+import Experience from '../landings/Experience';
+import Studies from '../landings/Studies';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 function TabPanel(props) {
@@ -64,7 +64,7 @@ export default function ScrollableTabsButtonAuto() {
   function Appbarear() {
     const matches = useMediaQuery('(max-width:1080px)');
     if(matches) {
-      return  <AppBar position="static" color="primary" className="bar" elevation="0">
+      return  <AppBar position="sticky" color="primary" className="bar" elevation="3">
                 <Tabear value={value}/>
               </AppBar>
     } else {
@@ -119,10 +119,10 @@ export default function ScrollableTabsButtonAuto() {
         <Hello />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Reinos />
+        <Experience />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Religiones />
+        <Studies />
       </TabPanel>
       <TabPanel value={value} index={3}>
         gg

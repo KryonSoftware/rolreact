@@ -26,6 +26,24 @@
   color: rgba(44, 44, 44, 0.933);
 }
 
+.icono {
+  margin-left: -20px!important;
+}
+
+.iconop {
+  margin-left: -10px!important;
+}
+
+.iconos {
+  margin-left: -18px!important;
+}
+
+.trabajo-viejo {
+  height: 40px;
+  width: 40px;
+  margin-left: -20px;
+}
+
 .marco {
   float:right;
   padding: 25px;
@@ -68,8 +86,11 @@
   width: 150px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
                   0 1px 18px 0 rgba(0, 0, 0, 0.12),
-                  0 3px 5px -1px rgba(0, 0, 0, 0.4)
+                  0 3px 5px -1px rgba(0, 0, 0, 0.4);
+  background-color: #fAfAfA;
 }
+
+.vertical-timeline::before{content:'';position:absolute;top:0;left:18px;height:100%;width:4px;background:#7132FF!important}
 
 .content {
   margin:0 auto, 0 auto;
@@ -93,6 +114,15 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 }
 
+.final {
+  height: 200px;
+  margin-bottom: -140px;
+}
+
+.closetop {
+  margin-top: -101px;
+}
+
 .content-grey {
   margin:0 auto, 0 auto;
   padding: 16px;
@@ -102,7 +132,7 @@
   color:black;
   padding-bottom: 400px;
   padding-top: 400px;
-  margin-bottom: -140px;
+  margin-bottom: -141px;
   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px)); */
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
 }
@@ -130,6 +160,10 @@ h2 {
 
 .alignright {
   text-align: right;
+}
+
+.experience {
+  text-align: center;
 }
 
 @media (max-width: 720px) {
@@ -209,5 +243,20 @@ h2 {
   }
   .black-font {
     color: rgba(44, 44, 44, 0.933);
+  }
+  .experience {
+    text-align: center;
+  }
+
+  .content-white {
+    margin:0 auto, 0 auto;
+    padding: 16px;
+    padding-right: 20%;
+    padding-left: 20%;
+    background-color: transparent;
+    color:black;
+    padding-bottom: 500px;
+    padding-top: 200px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
   }
 }

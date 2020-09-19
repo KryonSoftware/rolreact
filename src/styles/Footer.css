@@ -66,8 +66,12 @@
     align-items: center;
 }
 
-.iconoLibre {
+.iconoLibre-div {
     margin-right: 5%;
+    margin-left: 5%;
+}
+
+.iconoLibre {
     transition: transform 250ms;
     color: rgba(219, 219, 219, 0.933);
 }
