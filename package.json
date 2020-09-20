@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kryonsoftware.github.io/rolreact/",
+  "homepage": "https://KryonSoftware.github.io/portfolio",
   "name": "rolreact",
   "version": "0.1.0",
   "private": true,
@@ -22,8 +22,8 @@
     "react-vertical-timeline-component": "^3.0.2"
   },
   "scripts": {
-    "predeploy":"sudo npm run build",
-    "deploy":"sudo gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
